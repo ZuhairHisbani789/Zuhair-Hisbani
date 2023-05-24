@@ -1,4 +1,4 @@
-import java.util.Scanner;
+simport java.util.Scanner;
 
 public class ATM {
     private static double balance = 1000; // Initial account balance
@@ -12,7 +12,7 @@ public class ATM {
             System.out.println("2. Withdraw Cash");
             System.out.println("3. Deposit Cash");
             System.out.println("4. Quit");
-            System.out.print("Enter your choice: ")
+            System.out.print("Enter your choice: ");
             int choice = input.nextInt();
 
             switch (choice) {
@@ -33,7 +33,7 @@ public class ATM {
                     System.out.println("Thank you for using the ATM. Goodbye!");
                     System.exit(0);
                 default:
-                    System.out.println("Invalid choice. Please try again.);
+                    System.out.println("Invalid choice. Please try again.");
                     break;
             }
         }
@@ -43,7 +43,7 @@ public class ATM {
         System.out.println("Your balance is: $" + balance);
     }
 
-    private static void withdraw(double amount) 
+    private static void withdraw(double amount){ 
         if (amount > balance) {
             System.out.println("Insufficient balance. Withdrawal failed.");
         } else {
